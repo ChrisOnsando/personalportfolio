@@ -1,0 +1,445 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #ffffff;
+  mmin-height: 900px;
+  max-width: 1440px;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/*Section for the landing page*/
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: url("images/background.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*navigation bar*/
+.navbar {
+  height: 72px;
+}
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  margin: 16px 0;
+}
+.navbar ul li {
+  list-style-type: none;
+  margin-left: 20px;
+}
+.navbar ul li a {
+  text-decoration: none;
+  margin: 10px 12px;
+  font-family: "Inter", sans-serif;
+  font-style: 400;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  color: #344563;
+}
+
+/*landing page styling*/
+.intro {
+  margin: 160px 260px;
+  text-align: center;
+}
+.intro .introheader {
+  margin: 24px 0;
+}
+.intro .introheader h1 {
+  width: 920px;
+  height: 60px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  color: #172b4d;
+}
+
+.intro .introheader h2 {
+  width: 956px;
+  height: 50px;
+  color: #36b37f;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+}
+.intro .introdesc p {
+  width: 920px;
+  height: 96px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #172b4d;
+  text-align: center;
+}
+
+.intro .introicons {
+  float: left;
+  width: 100%;
+  padding: 3px 10px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.intro .introicons ul li {
+  text-decoration: none;
+  list-style: none;
+  display: inline-block;
+  margin: 0px 10px;
+  text-align: center;
+}
+
+#works-title {
+  text-align: center;
+  padding-top: 150px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  border: 1px solid #d0d9d4;
+  border-radius: 8px;
+  margin: 10px;
+  height: 380px;
+  width: 364px;
+  margin-left: 70px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  margin-top: 10px;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+.column h3 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  align-items: center;
+  text-align: center;
+  color: #172b4d;
+  padding-bottom: 10px;
+}
+
+.content p {
+  font-family: "Inter", sans-serif;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #172b4d;
+  background: #ebf0ee;
+  border-radius: 4px;
+  padding: 8px 10px;
+  border: 1px solid #ebf0ee;
+  margin: auto;
+}
+
+.column button {
+  width: fit-content;
+  margin-top: 10px;
+  background: #36b37f;
+  border-radius: 4px;
+  width: 65%;
+}
+
+.column button:hover {
+  box-shadow: 0 8px 16px 0 #36b37f3d;
+}
+
+.column button:active {
+  background-color: #008552;
+}
+
+#aboutme {
+  background-image: url("images/illustration-about-me-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: bottom;
+  padding: 25px;
+}
+
+#aboutme h2 {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+}
+
+#aboutme p {
+  text-align: center;
+  padding-left: 350px;
+  padding-bottom: 100px;
+  margin: 30px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  color: #42526e;
+  width: 920px;
+  height: 96px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  padding: 16px 32px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid #4caf50;
+  text-align: center;
+  margin: auto;
+}
+
+.button1:hover {
+  background-color: #4caf50;
+  color: white;
+}
+
+.card img {
+  border-radius: 10px;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  padding: 8%;
+}
+
+.tags {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: #ebf0ee;
+}
+
+.tags > * {
+  border-radius: 8px;
+  color: #36b37f;
+  padding: 12px;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 2px;
+  font-weight: 600;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #ebf0ee;
+  border-radius: 5px;
+  border-color: #d0d9d4;
+  border: 1px solid #c1c7d0;
+  margin: 10px;
+}
+
+.card h3 {
+  background: #ebf0ee;
+}
+
+.card img {
+  background: #ebf0ee;
+}
+
+ul .card {
+  padding: 7px;
+}
+
+.skills h3 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #344563;
+}
+
+.tags li {
+  list-style-type: none;
+  font-family: "Inter", sans-serif;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #36b37e;
+}
+
+#form h2 {
+  width: 463px;
+  height: 256px;
+  margin-left: 50px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  color: #172b4d;
+}
+
+#form {
+  display: grid;
+  grid-template-columns: 100%;
+  justify-content: center;
+}
+
+#form {
+  padding: 0% 80px;
+}
+
+form > * {
+  margin: 10px 0%;
+  padding: 12px;
+  border: 1px solid #d0d9d4;
+  box-sizing: border-box;
+  border-radius: 4px;
+  max-height: 90px;
+  width: 100%;
+}
+
+#form {
+  justify-content: space-around;
+  align-items: center;
+  background-image: url("images/illustration-form-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: bottom;
+}
+
+#form {
+  grid-template-columns: 40% 50%;
+}
+
+.email {
+  display: none;
+}
+
+#form {
+  padding-right: 130px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.email {
+  color: #42526e;
+  padding-top: 10%;
+}
+
+form .button {
+  align-self: flex-start;
+}
+
+.button {
+  width: fit-content;
+  background: #36b37f;
+  border-radius: 4px;
+}
+
+.button:hover {
+  box-shadow: 0 8px 16px 0 #36b37f3d;
+}
+
+.button:active {
+  background-color: #008552;
+}
+
+.footericons {
+  float: left;
+  width: 100%;
+  padding: 3px 10px;
+  text-align: center;
+  font-size: 20px;
+  color: #505f79;
+}
+
+.footericons ul li {
+  text-decoration: none;
+  list-style: none;
+  display: inline-block;
+  margin: 0px 10px;
+  text-align: center;
+}
